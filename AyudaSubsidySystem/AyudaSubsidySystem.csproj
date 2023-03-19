@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDAD80C3-90D3-4D64-A4A5-91015836772F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AyudaSubsidySystem</RootNamespace>
+    <AssemblyName>AyudaSubsidySystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AplicationForm.Designer.cs">
+      <DependentUpon>AplicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyudaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Benificiries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Benificiries.Designer.cs">
+      <DependentUpon>Frm_Benificiries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Info.Designer.cs">
+      <DependentUpon>Frm_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Releasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Releasing.Designer.cs">
+      <DependentUpon>Frm_Releasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Summary.Designer.cs">
+      <DependentUpon>Frm_Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Verify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Verify.Designer.cs">
+      <DependentUpon>Frm_Verify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_WaitListed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_WaitListed.Designer.cs">
+      <DependentUpon>Frm_WaitListed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AplicationForm.resx">
+      <DependentUpon>AplicationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Benificiries.resx">
+      <DependentUpon>Frm_Benificiries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Info.resx">
+      <DependentUpon>Frm_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Releasing.resx">
+      <DependentUpon>Frm_Releasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Summary.resx">
+      <DependentUpon>Frm_Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Verify.resx">
+      <DependentUpon>Frm_Verify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_WaitListed.resx">
+      <DependentUpon>Frm_WaitListed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AyudaDataSet.xsc">
+      <DependentUpon>AyudaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AyudaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyudaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyudaDataSet.xss">
+      <DependentUpon>AyudaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waitclock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagmoney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waitclock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formaplly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\completed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ayuda.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\g_violetredyellow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

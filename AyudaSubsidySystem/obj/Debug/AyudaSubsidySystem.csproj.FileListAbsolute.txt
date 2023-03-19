@@ -1,0 +1,15 @@
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\bin\Debug\AyudaSubsidySystem.exe.config
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\bin\Debug\AyudaSubsidySystem.exe
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\bin\Debug\AyudaSubsidySystem.pdb
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.csprojAssemblyReference.cache
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.Form1.resources
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.Properties.Resources.resources
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.csproj.GenerateResource.cache
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.csproj.CoreCompileInputs.cache
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.exe
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.pdb
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.Dashboard.resources
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.AplicationForm.resources
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.Frm_Benificiries.resources
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\bin\Debug\Ayuda.accdb
+C:\Users\Trisha Castillo\Documents\CaseStudy\AyudaSubsidySystem\obj\Debug\AyudaSubsidySystem.Frm_Info.resources

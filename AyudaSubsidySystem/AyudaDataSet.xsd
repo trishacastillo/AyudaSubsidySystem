@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AyudaDataSet" targetNamespace="http://tempuri.org/AyudaDataSet.xsd" xmlns:mstns="http://tempuri.org/AyudaDataSet.xsd" xmlns="http://tempuri.org/AyudaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AyudaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AyudaConnectionString (Settings)" PropertyReference="ApplicationSettings.AyudaSubsidySystem.Properties.Settings.GlobalReference.Default.AyudaConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ApplicationFormTableAdapter" GeneratorDataComponentClassName="ApplicationFormTableAdapter" Name="ApplicationForm" UserDataComponentName="ApplicationFormTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AyudaConnectionString (Settings)" DbObjectName="ApplicationForm" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT lastname, firstname, middlename, birthdate, sex, address, occupation, monthly_income, contact FROM ApplicationForm</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="lastname" DataSetColumn="lastname" />
+              <Mapping SourceColumn="firstname" DataSetColumn="firstname" />
+              <Mapping SourceColumn="middlename" DataSetColumn="middlename" />
+              <Mapping SourceColumn="birthdate" DataSetColumn="birthdate" />
+              <Mapping SourceColumn="sex" DataSetColumn="sex" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="occupation" DataSetColumn="occupation" />
+              <Mapping SourceColumn="monthly_income" DataSetColumn="monthly_income" />
+              <Mapping SourceColumn="contact" DataSetColumn="contact" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BeneficiriesTableAdapter" GeneratorDataComponentClassName="BeneficiriesTableAdapter" Name="Beneficiries" UserDataComponentName="BeneficiriesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AyudaConnectionString (Settings)" DbObjectName="Beneficiries" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_number, household_no, lastname, firstname, middlename, birthdate, sex, address, occupation, monthly_income, contact, age, status, verification_status FROM Beneficiries</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_number" DataSetColumn="id_number" />
+              <Mapping SourceColumn="household_no" DataSetColumn="household_no" />
+              <Mapping SourceColumn="lastname" DataSetColumn="lastname" />
+              <Mapping SourceColumn="firstname" DataSetColumn="firstname" />
+              <Mapping SourceColumn="middlename" DataSetColumn="middlename" />
+              <Mapping SourceColumn="birthdate" DataSetColumn="birthdate" />
+              <Mapping SourceColumn="sex" DataSetColumn="sex" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="occupation" DataSetColumn="occupation" />
+              <Mapping SourceColumn="monthly_income" DataSetColumn="monthly_income" />
+              <Mapping SourceColumn="contact" DataSetColumn="contact" />
+              <Mapping SourceColumn="age" DataSetColumn="age" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+              <Mapping SourceColumn="verification_status" DataSetColumn="verification_status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VerificationTableAdapter" GeneratorDataComponentClassName="VerificationTableAdapter" Name="Verification" UserDataComponentName="VerificationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AyudaConnectionString (Settings)" DbObjectName="Verification" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_number, household_no, lastname, firstname, sex, contact, application_status, verification_status FROM Verification</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_number" DataSetColumn="id_number" />
+              <Mapping SourceColumn="household_no" DataSetColumn="household_no" />
+              <Mapping SourceColumn="lastname" DataSetColumn="lastname" />
+              <Mapping SourceColumn="firstname" DataSetColumn="firstname" />
+              <Mapping SourceColumn="sex" DataSetColumn="sex" />
+              <Mapping SourceColumn="contact" DataSetColumn="contact" />
+              <Mapping SourceColumn="application_status" DataSetColumn="application_status" />
+              <Mapping SourceColumn="verification_status" DataSetColumn="verification_status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WaitingTableAdapter" GeneratorDataComponentClassName="WaitingTableAdapter" Name="Waiting" UserDataComponentName="WaitingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AyudaConnectionString (Settings)" DbObjectName="Waiting" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT lastname, firstname, middlename, birthdate, sex, address, occupation, monthly_income, contact, application_status FROM Waiting</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="lastname" DataSetColumn="lastname" />
+              <Mapping SourceColumn="firstname" DataSetColumn="firstname" />
+              <Mapping SourceColumn="middlename" DataSetColumn="middlename" />
+              <Mapping SourceColumn="birthdate" DataSetColumn="birthdate" />
+              <Mapping SourceColumn="sex" DataSetColumn="sex" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="occupation" DataSetColumn="occupation" />
+              <Mapping SourceColumn="monthly_income" DataSetColumn="monthly_income" />
+              <Mapping SourceColumn="contact" DataSetColumn="contact" />
+              <Mapping SourceColumn="application_status" DataSetColumn="application_status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AyudaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AyudaDataSet" msprop:Generator_UserDSName="AyudaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ApplicationForm" msprop:Generator_TableClassName="ApplicationFormDataTable" msprop:Generator_TableVarName="tableApplicationForm" msprop:Generator_TablePropName="ApplicationForm" msprop:Generator_RowDeletingName="ApplicationFormRowDeleting" msprop:Generator_RowChangingName="ApplicationFormRowChanging" msprop:Generator_RowEvHandlerName="ApplicationFormRowChangeEventHandler" msprop:Generator_RowDeletedName="ApplicationFormRowDeleted" msprop:Generator_UserTableName="ApplicationForm" msprop:Generator_RowChangedName="ApplicationFormRowChanged" msprop:Generator_RowEvArgName="ApplicationFormRowChangeEvent" msprop:Generator_RowClassName="ApplicationFormRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="lastname" msprop:Generator_ColumnVarNameInTable="columnlastname" msprop:Generator_ColumnPropNameInRow="lastname" msprop:Generator_ColumnPropNameInTable="lastnameColumn" msprop:Generator_UserColumnName="lastname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="firstname" msprop:Generator_ColumnVarNameInTable="columnfirstname" msprop:Generator_ColumnPropNameInRow="firstname" msprop:Generator_ColumnPropNameInTable="firstnameColumn" msprop:Generator_UserColumnName="firstname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="middlename" msprop:Generator_ColumnVarNameInTable="columnmiddlename" msprop:Generator_ColumnPropNameInRow="middlename" msprop:Generator_ColumnPropNameInTable="middlenameColumn" msprop:Generator_UserColumnName="middlename" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="birthdate" msprop:Generator_ColumnVarNameInTable="columnbirthdate" msprop:Generator_ColumnPropNameInRow="birthdate" msprop:Generator_ColumnPropNameInTable="birthdateColumn" msprop:Generator_UserColumnName="birthdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnPropNameInTable="sexColumn" msprop:Generator_UserColumnName="sex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="occupation" msprop:Generator_ColumnVarNameInTable="columnoccupation" msprop:Generator_ColumnPropNameInRow="occupation" msprop:Generator_ColumnPropNameInTable="occupationColumn" msprop:Generator_UserColumnName="occupation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="monthly_income" msprop:Generator_ColumnVarNameInTable="columnmonthly_income" msprop:Generator_ColumnPropNameInRow="monthly_income" msprop:Generator_ColumnPropNameInTable="monthly_incomeColumn" msprop:Generator_UserColumnName="monthly_income" type="xs:int" minOccurs="0" />
+              <xs:element name="contact" msprop:Generator_ColumnVarNameInTable="columncontact" msprop:Generator_ColumnPropNameInRow="contact" msprop:Generator_ColumnPropNameInTable="contactColumn" msprop:Generator_UserColumnName="contact" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Beneficiries" msprop:Generator_TableClassName="BeneficiriesDataTable" msprop:Generator_TableVarName="tableBeneficiries" msprop:Generator_TablePropName="Beneficiries" msprop:Generator_RowDeletingName="BeneficiriesRowDeleting" msprop:Generator_RowChangingName="BeneficiriesRowChanging" msprop:Generator_RowEvHandlerName="BeneficiriesRowChangeEventHandler" msprop:Generator_RowDeletedName="BeneficiriesRowDeleted" msprop:Generator_UserTableName="Beneficiries" msprop:Generator_RowChangedName="BeneficiriesRowChanged" msprop:Generator_RowEvArgName="BeneficiriesRowChangeEvent" msprop:Generator_RowClassName="BeneficiriesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_number" msprop:Generator_ColumnVarNameInTable="columnid_number" msprop:Generator_ColumnPropNameInRow="id_number" msprop:Generator_ColumnPropNameInTable="id_numberColumn" msprop:Generator_UserColumnName="id_number" type="xs:int" minOccurs="0" />
+              <xs:element name="household_no" msprop:Generator_ColumnVarNameInTable="columnhousehold_no" msprop:Generator_ColumnPropNameInRow="household_no" msprop:Generator_ColumnPropNameInTable="household_noColumn" msprop:Generator_UserColumnName="household_no" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lastname" msprop:Generator_ColumnVarNameInTable="columnlastname" msprop:Generator_ColumnPropNameInRow="lastname" msprop:Generator_ColumnPropNameInTable="lastnameColumn" msprop:Generator_UserColumnName="lastname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="firstname" msprop:Generator_ColumnVarNameInTable="columnfirstname" msprop:Generator_ColumnPropNameInRow="firstname" msprop:Generator_ColumnPropNameInTable="firstnameColumn" msprop:Generator_UserColumnName="firstname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="middlename" msprop:Generator_ColumnVarNameInTable="columnmiddlename" msprop:Generator_ColumnPropNameInRow="middlename" msprop:Generator_ColumnPropNameInTable="middlenameColumn" msprop:Generator_UserColumnName="middlename" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="birthdate" msprop:Generator_ColumnVarNameInTable="columnbirthdate" msprop:Generator_ColumnPropNameInRow="birthdate" msprop:Generator_ColumnPropNameInTable="birthdateColumn" msprop:Generator_UserColumnName="birthdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnPropNameInTable="sexColumn" msprop:Generator_UserColumnName="sex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="occupation" msprop:Generator_ColumnVarNameInTable="columnoccupation" msprop:Generator_ColumnPropNameInRow="occupation" msprop:Generator_ColumnPropNameInTable="occupationColumn" msprop:Generator_UserColumnName="occupation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="monthly_income" msprop:Generator_ColumnVarNameInTable="columnmonthly_income" msprop:Generator_ColumnPropNameInRow="monthly_income" msprop:Generator_ColumnPropNameInTable="monthly_incomeColumn" msprop:Generator_UserColumnName="monthly_income" type="xs:int" minOccurs="0" />
+              <xs:element name="contact" msprop:Generator_ColumnVarNameInTable="columncontact" msprop:Generator_ColumnPropNameInRow="contact" msprop:Generator_ColumnPropNameInTable="contactColumn" msprop:Generator_UserColumnName="contact" type="xs:int" minOccurs="0" />
+              <xs:element name="age" msprop:Generator_ColumnVarNameInTable="columnage" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnPropNameInTable="ageColumn" msprop:Generator_UserColumnName="age" type="xs:double" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="verification_status" msprop:Generator_ColumnVarNameInTable="columnverification_status" msprop:Generator_ColumnPropNameInRow="verification_status" msprop:Generator_ColumnPropNameInTable="verification_statusColumn" msprop:Generator_UserColumnName="verification_status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Verification" msprop:Generator_TableClassName="VerificationDataTable" msprop:Generator_TableVarName="tableVerification" msprop:Generator_TablePropName="Verification" msprop:Generator_RowDeletingName="VerificationRowDeleting" msprop:Generator_RowChangingName="VerificationRowChanging" msprop:Generator_RowEvHandlerName="VerificationRowChangeEventHandler" msprop:Generator_RowDeletedName="VerificationRowDeleted" msprop:Generator_UserTableName="Verification" msprop:Generator_RowChangedName="VerificationRowChanged" msprop:Generator_RowEvArgName="VerificationRowChangeEvent" msprop:Generator_RowClassName="VerificationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_number" msprop:Generator_ColumnVarNameInTable="columnid_number" msprop:Generator_ColumnPropNameInRow="id_number" msprop:Generator_ColumnPropNameInTable="id_numberColumn" msprop:Generator_UserColumnName="id_number" type="xs:int" minOccurs="0" />
+              <xs:element name="household_no" msprop:Generator_ColumnVarNameInTable="columnhousehold_no" msprop:Generator_ColumnPropNameInRow="household_no" msprop:Generator_ColumnPropNameInTable="household_noColumn" msprop:Generator_UserColumnName="household_no" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lastname" msprop:Generator_ColumnVarNameInTable="columnlastname" msprop:Generator_ColumnPropNameInRow="lastname" msprop:Generator_ColumnPropNameInTable="lastnameColumn" msprop:Generator_UserColumnName="lastname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="firstname" msprop:Generator_ColumnVarNameInTable="columnfirstname" msprop:Generator_ColumnPropNameInRow="firstname" msprop:Generator_ColumnPropNameInTable="firstnameColumn" msprop:Generator_UserColumnName="firstname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnPropNameInTable="sexColumn" msprop:Generator_UserColumnName="sex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="contact" msprop:Generator_ColumnVarNameInTable="columncontact" msprop:Generator_ColumnPropNameInRow="contact" msprop:Generator_ColumnPropNameInTable="contactColumn" msprop:Generator_UserColumnName="contact" type="xs:int" minOccurs="0" />
+              <xs:element name="application_status" msprop:Generator_ColumnVarNameInTable="columnapplication_status" msprop:Generator_ColumnPropNameInRow="application_status" msprop:Generator_ColumnPropNameInTable="application_statusColumn" msprop:Generator_UserColumnName="application_status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="verification_status" msprop:Generator_ColumnVarNameInTable="columnverification_status" msprop:Generator_ColumnPropNameInRow="verification_status" msprop:Generator_ColumnPropNameInTable="verification_statusColumn" msprop:Generator_UserColumnName="verification_status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Waiting" msprop:Generator_TableClassName="WaitingDataTable" msprop:Generator_TableVarName="tableWaiting" msprop:Generator_TablePropName="Waiting" msprop:Generator_RowDeletingName="WaitingRowDeleting" msprop:Generator_RowChangingName="WaitingRowChanging" msprop:Generator_RowEvHandlerName="WaitingRowChangeEventHandler" msprop:Generator_RowDeletedName="WaitingRowDeleted" msprop:Generator_UserTableName="Waiting" msprop:Generator_RowChangedName="WaitingRowChanged" msprop:Generator_RowEvArgName="WaitingRowChangeEvent" msprop:Generator_RowClassName="WaitingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="lastname" msprop:Generator_ColumnVarNameInTable="columnlastname" msprop:Generator_ColumnPropNameInRow="lastname" msprop:Generator_ColumnPropNameInTable="lastnameColumn" msprop:Generator_UserColumnName="lastname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="firstname" msprop:Generator_ColumnVarNameInTable="columnfirstname" msprop:Generator_ColumnPropNameInRow="firstname" msprop:Generator_ColumnPropNameInTable="firstnameColumn" msprop:Generator_UserColumnName="firstname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="middlename" msprop:Generator_ColumnVarNameInTable="columnmiddlename" msprop:Generator_ColumnPropNameInRow="middlename" msprop:Generator_ColumnPropNameInTable="middlenameColumn" msprop:Generator_UserColumnName="middlename" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="birthdate" msprop:Generator_ColumnVarNameInTable="columnbirthdate" msprop:Generator_ColumnPropNameInRow="birthdate" msprop:Generator_ColumnPropNameInTable="birthdateColumn" msprop:Generator_UserColumnName="birthdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnPropNameInTable="sexColumn" msprop:Generator_UserColumnName="sex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="occupation" msprop:Generator_ColumnVarNameInTable="columnoccupation" msprop:Generator_ColumnPropNameInRow="occupation" msprop:Generator_ColumnPropNameInTable="occupationColumn" msprop:Generator_UserColumnName="occupation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="monthly_income" msprop:Generator_ColumnVarNameInTable="columnmonthly_income" msprop:Generator_ColumnPropNameInRow="monthly_income" msprop:Generator_ColumnPropNameInTable="monthly_incomeColumn" msprop:Generator_UserColumnName="monthly_income" type="xs:int" minOccurs="0" />
+              <xs:element name="contact" msprop:Generator_ColumnVarNameInTable="columncontact" msprop:Generator_ColumnPropNameInRow="contact" msprop:Generator_ColumnPropNameInTable="contactColumn" msprop:Generator_UserColumnName="contact" type="xs:int" minOccurs="0" />
+              <xs:element name="application_status" msprop:Generator_ColumnVarNameInTable="columnapplication_status" msprop:Generator_ColumnPropNameInRow="application_status" msprop:Generator_ColumnPropNameInTable="application_statusColumn" msprop:Generator_UserColumnName="application_status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
